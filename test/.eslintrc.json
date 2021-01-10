@@ -1,0 +1,25 @@
+{
+	"extends": [ "plugin:qunit/two" ],
+	"env": {
+		"browser": true,
+		"es6": false
+	},
+	"plugins": [
+		"html",
+		"qunit"
+	],
+	"parserOptions": {
+		"sourceType": "script"
+	},
+	"globals": {
+		"QUnit": false,
+		"Promise": false,
+		"console": false
+	},
+	"rules": {
+		"max-len": "off"
+	},
+	"ignorePatterns": [
+		"cli/fixtures/sourcemap/*.min.js"
+	]
+}
